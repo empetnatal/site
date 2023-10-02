@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>EMPet - Encontre meu pet</title>
+</head>
+<body>
+    <div class="container">
+        <h1>EMPet - Encontre meu pet</h1>
+        <p>É um site de rede social que visa ajudar a comunidade a encontrar seus animais de estimação, quando os mesmos resolvem se aventurar fora de casa e não conseguem mais retornar. Cachorros, gatos, passarinhos e etc. Visa se tornar um site de ajuda à comunidade na cidade de Natal-RN.</p>
+        
+        <h2>Desenvolvedores:</h2>
+        <p>Igor Freire de Sousa, Dérik Luiz Gomes Aguiar, Tiago Henrique Felix de Souza, Maria Eduarda Mendonça de Souza</p>
+        
+        <h2>Adicionar Pet Perdido:</h2>
+        <label for="petName">Nome:</label>
+        <input type="text" id="petName" placeholder="Nome do pet">
+        
+        <label for="petBreed">Raça:</label>
+        <input type="text" id="petBreed" placeholder="Raça do pet">
+        
+        <label for="petAge">Idade:</label>
+        <input type="text" id="petAge" placeholder="Idade do pet">
+        
+        <label for="petDescription">Descrição:</label>
+        <textarea id="petDescription" placeholder="Descrição do pet"></textarea>
+        
+        <label>Tipo de pet:</label><br>
+        <input type="radio" id="dog" name="petType" value="Cachorro">
+        <label for="dog">Cachorro</label>
+        <input type="radio" id="cat" name="petType" value="Gato">
+        <label for="cat">Gato</label>
+        <input type="radio" id="bird" name="petType" value="Pássaro">
+        <label for="bird">Pássaro</label>
+        <input type="radio" id="other" name="petType" value="Outros">
+        <label for="other">Outros</label>
+        
+        <h2>Cadastro para a Comunidade:</h2>
+        <label for="communityType">Tipo de cadastro:</label>
+        <select id="communityType">
+            <option value="PetShop">PetShop</option>
+            <option value="ONG">ONG</option>
+            <option value="Veterinário">Médico Veterinário</option>
+        </select>
+        
+        <h2>Contato:</h2>
+        <label for="contactName">Nome:</label>
+        <input type="text" id="contactName" placeholder="Seu nome">
+        
+        <label for="contactEmail">Email:</label>
+        <input type="email" id="contactEmail" placeholder="Seu email">
+        
+        <label for="contactPhone">Telefone:</label>
+        <input type="tel" id="contactPhone" placeholder="Seu telefone">
+        
+        <label for="contactText">Texto:</label>
+        <textarea id="contactText" placeholder="Digite sua mensagem"></textarea>
+        
+        <button onclick="enviarContato()">Enviar</button>
+        <button onclick="limparCampos()">Limpar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
